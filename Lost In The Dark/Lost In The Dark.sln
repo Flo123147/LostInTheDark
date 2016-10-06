@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lost In The Dark.CSharp.Plugins", "Lost In The Dark.CSharp.Plugins.csproj", "{02442FE9-6BD6-8A84-C6FC-66C207E87839}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lost In The Dark.CSharp", "Lost In The Dark.CSharp.csproj", "{06B0E5C2-65CB-0AAC-50FF-35F46ACB224E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lost In The Dark.CSharp.Editor", "Lost In The Dark.CSharp.Editor.csproj", "{D3A38781-46E0-79DB-87FB-2B84B5A03E6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02442FE9-6BD6-8A84-C6FC-66C207E87839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02442FE9-6BD6-8A84-C6FC-66C207E87839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02442FE9-6BD6-8A84-C6FC-66C207E87839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02442FE9-6BD6-8A84-C6FC-66C207E87839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B0E5C2-65CB-0AAC-50FF-35F46ACB224E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B0E5C2-65CB-0AAC-50FF-35F46ACB224E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B0E5C2-65CB-0AAC-50FF-35F46ACB224E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B0E5C2-65CB-0AAC-50FF-35F46ACB224E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A38781-46E0-79DB-87FB-2B84B5A03E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A38781-46E0-79DB-87FB-2B84B5A03E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A38781-46E0-79DB-87FB-2B84B5A03E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A38781-46E0-79DB-87FB-2B84B5A03E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
