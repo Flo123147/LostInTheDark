@@ -62,6 +62,7 @@
      <Compile Include="Assets\Start.cs" />
      <Compile Include="Assets\Teleporter.cs" />
      <Compile Include="Assets\Tile.cs" />
+     <Compile Include="Assets\Torch.cs" />
      <Compile Include="Assets\Triggerable.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />

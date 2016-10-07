@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 58cfb241a88a5c84994b8e556149df20
-timeCreated: 1475779243
+timeCreated: 1475853440
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -17,15 +17,15 @@ TextureImporter:
     21300020: Sprites 1_10
     21300022: Sprites 1_11
     21300024: Sprites 1_12
-    21300026: Sprites 1_13
-    21300028: Sprites 1_14
-    21300030: Sprites 1_15
-    21300032: Sprites 1_16
-    21300034: Sprites 1_17
-    21300036: Sprites 1_18
-    21300038: Sprites 1_19
-    21300040: Sprites 1_20
-    21300042: Sprites 1_21
+    21300026: TorchOn_0
+    21300028: TorchOn_1
+    21300030: TorchOn_2
+    21300032: TorchOn_3
+    21300034: TorchOn_4
+    21300036: Torchoff_0
+    21300038: Torchoff_1
+    21300040: Torchoff_2
+    21300042: Torchoff_3
     21300044: Sprites 1_22
     21300046: Sprites 1_23
     21300048: Sprites 1_24
@@ -176,13 +176,13 @@ TextureImporter:
       name: Sprites 1_7
       rect:
         serializedVersion: 2
-        x: 21
+        x: 22
         y: 213
-        width: 94
+        width: 93
         height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -251,132 +251,119 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprites 1_13
+      name: TorchOn_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 143
-        width: 8
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Sprites 1_14
-      rect:
-        serializedVersion: 2
-        x: 30
+        x: 20
         y: 142
-        width: 9
+        width: 10
         height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprites 1_15
+      name: TorchOn_1
       rect:
         serializedVersion: 2
-        x: 42
+        x: 31
         y: 142
-        width: 9
+        width: 10
         height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprites 1_16
+      name: TorchOn_2
       rect:
         serializedVersion: 2
-        x: 55
+        x: 43
         y: 142
-        width: 9
+        width: 10
         height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprites 1_17
+      name: TorchOn_3
       rect:
         serializedVersion: 2
-        x: 67
+        x: 56
         y: 142
-        width: 11
+        width: 10
         height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprites 1_18
+      name: TorchOn_4
       rect:
         serializedVersion: 2
-        x: 19
-        y: 124
-        width: 9
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 69
+        y: 142
+        width: 10
+        height: 18
+      alignment: 9
+      pivot: {x: 0.1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprites 1_19
+      name: Torchoff_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 123
-        width: 7
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Sprites 1_20
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 123
-        width: 7
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Sprites 1_21
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 124
-        width: 7
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Sprites 1_22
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 123
+        x: 20
+        y: 126
         width: 10
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Torchoff_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 126
+        width: 10
+        height: 16
+      alignment: 9
+      pivot: {x: 0.1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Torchoff_2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 126
+        width: 10
+        height: 16
+      alignment: 9
+      pivot: {x: 0.1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Torchoff_3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 126
+        width: 10
+        height: 16
+      alignment: 9
+      pivot: {x: 0.1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -450,9 +437,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 358
-        y: 214
-        width: 94
-        height: 92
+        y: 213
+        width: 93
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
