@@ -26,6 +26,8 @@ public class Player : MonoBehaviour {
 	public float speedResetAt;
 	private float standstillTime = 0.2f;
 
+	private bool teleportLock;
+
 	public float camDist;
 	// Use this for initialization
 	void Awake () {
@@ -71,51 +73,58 @@ public class Player : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.L)) {
 			end.LoadLevelSelect ();
 		}
+		Vector2 vec = Vector2.zero;
 
 		rb.velocity = Vector3.zero;
 
 		float prevAngle = angle;
 
-		float up = Input.GetAxisRaw ("Vertical");
-		float right = Input.GetAxisRaw ("Horizontal");
-		Vector2 vec = new Vector2 (right, up);
-		if (vec.sqrMagnitude > 1) {
-			vec = vec.normalized;
-		}
 
-		if (up != 0 || right != 0) {
+		if (!teleportLock) {
+
+			float up = Input.GetAxisRaw ("Vertical");
+			float right = Input.GetAxisRaw ("Horizontal");
+			vec = new Vector2 (right, up);
+			if (vec.sqrMagnitude > 1) {
+				vec = vec.normalized;
+			}
+
+			if (up != 0 || right != 0) {
 			
 
 
-			currLerpTime += Time.deltaTime;
-			if (currLerpTime > lerpTime) {
-				currLerpTime = lerpTime;
+				currLerpTime += Time.deltaTime;
+				if (currLerpTime > lerpTime) {
+					currLerpTime = lerpTime;
+				}
+				speedPerc = currLerpTime / lerpTime;
+
+
+				speed = Mathf.Lerp (0, maxSpeed, speedPerc);
+
+
+				angle = Vector2.Angle (Vector2.up, vec);
+				if (right > 0) {
+					angle = 180 + (180 - angle);
+
+				}
+
+
+				rb.MovePosition (transform.position + new Vector3 (vec.x, vec.y, 0) * Time.deltaTime * speed);
+
+
+				speedResetAt = Time.time + standstillTime;
+
+			} else {	
+				if (Time.time >= speedResetAt) {
+					speed = 0;
+					currLerpTime = 0;
+				}
 			}
-			speedPerc = currLerpTime / lerpTime;
-
-
-			speed = Mathf.Lerp (0, maxSpeed, speedPerc);
-
-
-			angle = Vector2.Angle (Vector2.up, vec);
-			if (right > 0) {
-				angle = 180 + (180 - angle);
-
-			}
-			angle = Mathf.LerpAngle (prevAngle, angle, Time.deltaTime * speed);
-
-
-			rb.MovePosition (transform.position + new Vector3 (vec.x, vec.y, 0) * Time.deltaTime * speed);
-
-
-			speedResetAt = Time.time + standstillTime;
-
-		} else {	
-			if (Time.time >= speedResetAt) {
-				speed = 0;
-				currLerpTime = 0;
-			}
+		
 		}
+
+		angle = Mathf.LerpAngle (prevAngle, angle, Time.deltaTime * speed);
 
 
 		transform.rotation = Quaternion.Euler (0, 0, angle);
@@ -169,6 +178,14 @@ public class Player : MonoBehaviour {
 	public void End(){
 		end.EndLevel ();
 		Debug.Log ("Won");
+	}
+
+	public void Teleport (bool start){
+		if (start) {
+			teleportLock = true;
+		} else {
+			teleportLock = false;
+		}
 	}
 
 	public void Visible(){
