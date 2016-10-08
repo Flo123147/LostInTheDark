@@ -3,9 +3,7 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
-
-	private float speed;
-	public float maxSpeed;
+	public float speed;
 	public	Rigidbody2D rb;
 	public BoxCollider2D bc;
 	public float maxLightLengt;
@@ -46,7 +44,6 @@ public class Player : MonoBehaviour {
 
 		angle = 0;
 
-		speed = 0;
 		if(lerpTime <= 0){
 			Debug.LogError("LerpTime = 0!");
 			lerpTime = 0.1f;
@@ -90,42 +87,18 @@ public class Player : MonoBehaviour {
 			}
 
 			if (up != 0 || right != 0) {
-			
-
-
-				currLerpTime += Time.deltaTime;
-				if (currLerpTime > lerpTime) {
-					currLerpTime = lerpTime;
-				}
-				speedPerc = currLerpTime / lerpTime;
-
-
-				speed = Mathf.Lerp (0, maxSpeed, speedPerc);
-
-
 				angle = Vector2.Angle (Vector2.up, vec);
 				if (right > 0) {
 					angle = 180 + (180 - angle);
-
-				}
-
-
-				rb.MovePosition (transform.position + new Vector3 (vec.x, vec.y, 0) * Time.deltaTime * speed);
-
-
-				speedResetAt = Time.time + standstillTime;
-
-			} else {	
-				if (Time.time >= speedResetAt) {
-					speed = 0;
-					currLerpTime = 0;
 				}
 			}
+
+
+			angle = Mathf.LerpAngle (prevAngle, angle, 0.2f);
 		
 		}
 
-		angle = Mathf.LerpAngle (prevAngle, angle, Time.deltaTime * speed);
-
+		rb.MovePosition (transform.position + new Vector3 (vec.x, vec.y, 0) * Time.deltaTime *speed);
 
 		transform.rotation = Quaternion.Euler (0, 0, angle);
 
@@ -137,6 +110,10 @@ public class Player : MonoBehaviour {
 
 		anim.SetFloat ("PlayerSpeed", vec.sqrMagnitude);
 	}
+
+
+
+
 
 	public void OnTriggerEnter2D(Collider2D other){
 		Triggerable triggerable = other.GetComponent<Triggerable> ();

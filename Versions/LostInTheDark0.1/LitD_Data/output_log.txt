@@ -6,24 +6,24 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     2017 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Flo\Desktop\LitD_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Flo\Desktop\LitD_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Flo\Desktop\LitD_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Flo\Desktop\LitD_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Flo\Desktop\LitD_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Flo\Desktop\LitD_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Flo\Desktop\LitD_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Flo\Desktop\LitD_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Flo\Desktop\LitD_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Flo\Desktop\LitD_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.119 seconds
-Platform assembly: C:\Users\Flo\Desktop\LitD_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Flo\Desktop\LitD_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.1\LitD_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\GitHub\LostInTheDark\Versions\LostInTheDark0.1\LitD_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.1\LitD_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\GitHub\LostInTheDark\Versions\LostInTheDark0.1\LitD_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.1\LitD_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\GitHub\LostInTheDark\Versions\LostInTheDark0.1\LitD_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.1\LitD_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\GitHub\LostInTheDark\Versions\LostInTheDark0.1\LitD_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.1\LitD_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\GitHub\LostInTheDark\Versions\LostInTheDark0.1\LitD_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.133 seconds
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.1\LitD_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.1\LitD_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 120Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.187013 ms
+UnloadTime: 1.240862 ms
 360
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
@@ -33,15 +33,29 @@ Won
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.534390 ms
+UnloadTime: 1.606389 ms
 351
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1819.
-Total: 0.286803 ms (FindLiveObjects: 0.053263 ms CreateObjectMapping: 0.040971 ms MarkObjects: 0.188470 ms  DeleteObjects: 0.003511 ms)
+Total: 0.445422 ms (FindLiveObjects: 0.063506 ms CreateObjectMapping: 0.054726 ms MarkObjects: 0.320751 ms  DeleteObjects: 0.006145 ms)
+
+Won
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.196671 ms
+486
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 2451.
+Total: 0.895235 ms (FindLiveObjects: 0.139011 ms CreateObjectMapping: 0.071700 ms MarkObjects: 0.672816 ms  DeleteObjects: 0.010828 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 124c -> priority: 1 
-  Thread -> id: 1a3c -> priority: 1 
+  Thread -> id: 1f38 -> priority: 1 
+  Thread -> id: 168 -> priority: 1 

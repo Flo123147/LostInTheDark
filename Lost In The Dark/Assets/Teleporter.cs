@@ -80,7 +80,7 @@ public class Teleporter : MonoBehaviour, Triggerable{
 			Player player = tr.GetComponent<Player> ();
 			if (player) {
 				teleportTo.ReadyTransport ();
-				StopCoroutine("Transport");
+				
 				StartCoroutine ("Transport",player);
 			}
 		}

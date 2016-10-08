@@ -23,7 +23,7 @@ public class End : MonoBehaviour {
 	}
 
 	public void LoadLevelSelect (){
-		SceneManager.LoadScene (0);
+		SceneManager.LoadScene ("00LevelSelect");
 	}
 
 	public void EndLevel(){
