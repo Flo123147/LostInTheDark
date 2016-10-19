@@ -55,6 +55,7 @@
      <Compile Include="Assets\LevelSwitch.cs" />
      <Compile Include="Assets\LogicReciever.cs" />
      <Compile Include="Assets\LogicSetter.cs" />
+     <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\Player\Player.cs" />
      <Compile Include="Assets\PushBlock.cs" />
      <Compile Include="Assets\ResetSwitch.cs" />

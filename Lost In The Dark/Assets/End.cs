@@ -8,7 +8,8 @@ public class End : MonoBehaviour {
 	public bool lastLevel;
 	// Use this for initialization
 	void Awake () {
-
+		PlayerPrefs.SetString ("lastLevel","level" + set + "-" + level);
+		Debug.Log ("level" + set + "-" + level);
 	}
 
 

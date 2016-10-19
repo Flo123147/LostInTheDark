@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PushBlock : MonoBehaviour {
+public class PushBlock : MonoBehaviour, DoesNotBlock{
 
 	public int resetList;
 	private Vector3 startPos;
@@ -18,6 +18,10 @@ public class PushBlock : MonoBehaviour {
 
 	}
 
+	public bool isBlocking (){
+		return true;
+	}
+
 	private void Translate(Vector3 vec){
 		
 		bc.enabled = t_bc.enabled = false;
@@ -25,28 +29,29 @@ public class PushBlock : MonoBehaviour {
 		bool hitNewTrigger = false;
 		Triggerable toTrigger = null;
 		RaycastHit2D[] checkGeomty = Physics2D.RaycastAll (transform.position, vec, 1);
+
 		foreach (RaycastHit2D rch in checkGeomty) {
+			hitNewTrigger = false;
 			Triggerable triggerable = rch.transform.GetComponent<Triggerable> ();
 			DoesNotBlock doesNotBlock = rch.transform.GetComponent<DoesNotBlock> ();
 
-			if (triggerable != null && doesNotBlock == null) {
-				hitNewTrigger = true;
-			}
-			if (triggerable != null && doesNotBlock != null && !doesNotBlock.isBlocking()) {
-				hitNewTrigger = true;
+			if (doesNotBlock != null) {
+
+				if (doesNotBlock.isBlocking ()) {
+					hitWall = true;
+				} else {
+					if (triggerable != null) {
+						hitNewTrigger = true;		
+					}
+				}
+			} else {
+
+				if (triggerable != null) {
+					hitNewTrigger = true;	
+				}			
 			}
 
-			if (triggerable != null && doesNotBlock != null && doesNotBlock.isBlocking()) {
-				hitWall = true;
-			}
 
-			if (triggerable == null && doesNotBlock == null) {
-				hitWall = true;
-			}
-
-			if (triggerable == null && doesNotBlock != null && doesNotBlock.isBlocking()) {
-				hitWall = true;
-			}
 
 			if (hitNewTrigger) {
 				if (lastTrigged == null || lastTrigged != triggerable) {
@@ -62,7 +67,7 @@ public class PushBlock : MonoBehaviour {
 				lastTrigged.SwitchOff ();
 				lastTrigged = null;
 			}
-			if (hitNewTrigger) {
+			if (toTrigger != null) {
 				toTrigger.Trigger (this.transform);
 				lastTrigged = toTrigger;
 			}
@@ -104,5 +109,5 @@ public class PushBlock : MonoBehaviour {
 		if (triggerable!= null) {
 			triggerable.SwitchOff ();
 		}
-	}		
+	}	
 }

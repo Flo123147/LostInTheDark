@@ -1,0 +1,39 @@
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 770 (ID=0x1184)
+    Vendor:   NVIDIA
+    VRAM:     2017 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.6\LostInTheDark0.6_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\GitHub\LostInTheDark\Versions\LostInTheDark0.6\LostInTheDark0.6_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.6\LostInTheDark0.6_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\GitHub\LostInTheDark\Versions\LostInTheDark0.6\LostInTheDark0.6_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.6\LostInTheDark0.6_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\GitHub\LostInTheDark\Versions\LostInTheDark0.6\LostInTheDark0.6_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.6\LostInTheDark0.6_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\GitHub\LostInTheDark\Versions\LostInTheDark0.6\LostInTheDark0.6_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.6\LostInTheDark0.6_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\GitHub\LostInTheDark\Versions\LostInTheDark0.6\LostInTheDark0.6_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.035 seconds
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.6\LostInTheDark0.6_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\GitHub\LostInTheDark\Versions\LostInTheDark0.6\LostInTheDark0.6_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 120Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.829095 ms
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.904915 ms
+level2-1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 4547.
+Total: 0.993861 ms (FindLiveObjects: 0.170618 ms CreateObjectMapping: 0.071115 ms MarkObjects: 0.737494 ms  DeleteObjects: 0.014340 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 290c -> priority: 1 
+  Thread -> id: 2b34 -> priority: 1 
